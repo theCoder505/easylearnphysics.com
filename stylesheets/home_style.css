@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+body{
+    background-color: azure;
+    /* background-color: #1d2020; */
+    /* background-color: #1d2020;
+    background-image: radial-gradient(#ffffff 2%, transparent 2%),
+        radial-gradient(#979797 2%, transparent 2%),
+        radial-gradient(#fff 2%, transparent 2%);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px; */
+}
+
+
+.navbar{
+    background-color: #000;
+    background-image: radial-gradient(#ffffff 2%, transparent 2%), 
+        radial-gradient(#f8e800 2%, transparent 2%), 
+        radial-gradient(#fff 2%, transparent 2%);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+}
+
+.nav-logo{
+    width: 150px;
+}
+
+*:focus {
+    outline: none;
+}
+
+#topArticles, #topCourses{
+    background-color: white;
+    max-width: 1150px;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding: 50px 15px;
+}
+.custom_header{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    color: #fe5236;
+}
+.header_dash{
+    margin: 15px auto;
+    background-color: tomato;
+    color: tomato;
+    border: 2px solid tomato;
+    border-radius: 50%;
+    width: 25%;
+}
+
+.header_dash_dark{
+    margin: 15px auto;
+    background-color: #060000;
+    color: #060000;
+    border: 2px solid #060000;
+    border-radius: 50%;
+    width: 25%;
+}
+
+.header_dash_success{
+    margin: 15px auto;
+    background-color: #28a745;
+    color: #28a745;
+    border: 2px solid #28a745;
+    border-radius: 50%;
+    width: 25%;
+}
+
+.owl-nav {
+    margin-top: 25px !important;
+}
+
+.owl-prev, .owl-next {
+    background: orange !important;
+    font-size: 40px !important;
+    padding: 0px 22px !important;
+    width: 40px;
+    height: auto;
+    border-radius: 50% !important;
+    color: white !important;
+    font-weight: bold !important;
+    height: 40px;
+}
+
+.owl-prev span {
+    top: -18px;
+    position: relative;
+    font-family: 'Permanent Marker', cursive;
+}
+.owl-next span {
+    top: -18px;
+    position: relative;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.owl-prev span:focus, .owl-next span:focus{
+    outline: none;
+}
+
+
+#topItems{
+    border: 2px solid #000;
+    background-image: linear-gradient(#787878,#060000);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.inner{
+    overflow: hidden;
+}
+
+.card_img{
+    height: 150px;
+    width: 100%;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.card_img:hover{
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+.fa-orange{
+    color: orange;
+    margin: 5px;
+}
+
+
+.custom-btn {
+    border-radius: 50px;
+    color: white;
+    padding: 6px 20px;
+    transition: all 0.5s;
+}
+
+.custom-btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.title{
+    color: #fff !important;
+    font-size: 18px;
+}
+
+.topHr{
+    color: white;
+    background-color: white;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+.short_desc {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #b1adad;
+}
+
+
+/* ----------------------------------------------------------- */
+.course_image{
+    height: 200px;
+}
+#topCourses{
+    background-color: #000;
+    background-image: radial-gradient(#ffffff 2%, transparent 2%),
+        radial-gradient(#f8e800 2%, transparent 2%),
+        radial-gradient(#fff 2%, transparent 2%);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+}
+.courseItem {
+    border-bottom: 3px solid #646464 !important;
+    border-top: 3px solid #646464 !important;
+}
+
+#topCourses .owl-prev, #topCourses .owl-next{
+    background-color: #dc3545!important;
+}
+
+/* -------------------------------------------------------------- */
+
+
+.thumbnail-container {
+    position: relative;
+    width: 100% !important;
+    height: auto;
+    padding: 0px !important;
+    margin: 0px !important;
+    background-color: black;
+}
+.thumbnail-image {
+    opacity: 1;
+    display: block;
+    width: 100% !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.thumbnail-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.thumbnail-container:hover .thumbnail-image {
+    opacity: 0.1;
+}
+.thumbnail-container:hover .thumbnail-middle {
+    opacity: 1;
+
+}
+
+.thumbnail-title{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: white !important;
+    font-size: 22px;
+    font-weight: 400;
+}
+.thumbnail-subtitle{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: white !important;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* ----------------------------------------------------------- */
+.normal-btn{
+    border-radius: 2px !important;
+    padding-left: 15px !important;
+    padding-right: 15px!important;
+    background-color: #FF2D20!important;
+    color: white!important;
+    font-family: 'Hind Siliguri', sans-serif!important;
+    font-weight: 400!important;
+}
+
+.normal-btn:hover{
+    background-color: #c90900!important;
+}
+
+.normal-btn-outline{
+    border-radius: 2px !important;
+    padding-left: 20px !important;
+    padding-right: 20px!important;
+    background-color: white!important;
+    color:  #FF2D20! important;
+    font-family: 'Hind Siliguri', sans-serif!important;
+    font-weight: 400!important;
+    border: 0.5px solid  #FF2D20! important;
+}
+
+.normal-btn-outline:hover{
+    color:  white ! important;
+    background-color: #FF2D20! important;
+}
+
+/* ----------------------------------------------------------------- */
+  
+#ourProjects{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+   
+#projects{
+    background-color: #fff;
+    padding: 50px 15px;
+    border-radius: 15px;
+} 
+
+
+.projectImg {
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0px auto;
+    height: 300px;
+    transform: rotate(-12deg);
+    top: 10px;
+    position: relative;
+}
+
+#projectImgDiv{
+    margin: 0px auto;
+}
+
+#projectsHolder{
+    max-width: 500px;
+    position: relative;
+    right: 0%;
+}
+
+.caraouselImg{
+    width: 280px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+/* -------------------------------------------------------- */
+
+.review-img {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50%;
+    margin: 0px auto!important;
+}
+
+
+.service-card-logo{
+    width: 60%;
+    height: auto;
+}
+
+.service-card-title{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #FF2D20!important;
+    font-size: 18px;
+    font-weight: 400;
+}
+.service-card-subTitle{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #060000 !important;
+    font-weight: 300;
+    font-size: 14px;
+}
+.service-card{
+    border-radius: 2px !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    background-image: linear-gradient(#787878,#060000);
+}
+
+/* ------------------------------------------------------------------- */
+
+#foundersWords{
+    padding: 40px 15px;
+    background-color: white;
+    margin-bottom: 100px;
+    border-radius: 25px;
+}
+
+#writings {
+    margin: 10px auto;
+    max-width: 600px;
+    background-color: #f8f8f8bf;
+    color: #060000;
+    font-family: 'Hind Siliguri', sans-serif;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px;
+}
+
+#founder {
+    margin: 10px auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px;
+}
+
+.founderImg {
+    width: 350px;
+    height: auto;
+    margin: 0px auto;
+    border-radius: 15px;
+}
+
+.aos-init.aos-animate {
+    margin: 0px auto;
+}
+
+/* ------------------------------------------------------------------- */
+#middlePara {
+    margin: 0px auto;
+    max-width: 750px;
+    background-image: url("https://i.pinimg.com/originals/db/2f/8b/db2f8b3b06f2c3a38d0702f858f38729.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+#thePeraBg{
+    background-color: #ffffffbf;
+    color: #060000;
+    font-family: 'Hind Siliguri', sans-serif;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+/* -------------------------------------------------------- */
+
+#services{
+    padding: 70px 25px;
+}
+
+#serviceHolder {
+    background-color: #60606021;
+    margin-top: 25px;
+    border-radius: 15px;
+    margin-bottom: -40px;
+}
+
+#servicesWritings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    padding: 15px;
+    max-width: 450px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4e4e4e;
+}
+
+#servicesImgDiv{
+    position: relative;
+    float: left;
+}
+
+.servicesImg{
+    max-width: 650px;
+    height: auto;
+    border-radius: 0px 15px 15px 0px;
+}
+
+
+
+.ourservicesParas li{
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px;
+}
+
+.ourservicesParas li::before{
+    content: "\25BA \0020";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+}
+
+
+
+/* ----------------------------------------------------------------- */
+
+#bgImpression{
+    height: 100%;
+    /* background-color: #00000030; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#firstImpression{
+    background-image: url("../Images/firstImpression.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-color: #000;
+}
+
+#holding{
+    /* background-color: #0000005e; */
+    padding: 20px 30px;
+    border-radius: 25px;
+}
+
+.elpSay {
+    font-size: 50px !important;
+    text-align: center;
+}
+
+.says {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #ffffff;
+    background: #0000008f;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+
+
+/* ----------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .projectImg {
+        max-width: 320px;
+        margin: 0px auto;
+        height: auto;
+        margin-bottom: 20px;
+        transform: rotate(0deg);
+        top: 0px;
+        position: relative;
+    }
+
+    .elpSay {
+        font-size: 35px !important;
+        text-align: center;
+    }
+
+    .servicesImg{
+        width: 100%;
+        height: auto;
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+    
+  }
+
+
+
+
+
+
